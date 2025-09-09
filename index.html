@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Social links profile</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', 'sans-serif';
+    }
+  </style>
+
+</head>
+<body class="bg-black/90 flex justify-center items-center min-h-screen h-screen">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          screens: {
+            'xs': '370px',
+            '2xs': '300px',
+            'sm-xs': '400px',
+            'sm-x': '510px',
+            'md-2': '900px',
+            'lg-2': '1100px',
+          }
+        }
+      }
+    }
+  </script>
+
+    <!-- main container -->
+    <div class="w-full max-w-[90%] sm-xs:max-w-[85%] sm-x:max-w-[75%] sm:max-w-[60%] md:max-w-[45%] lg:max-w-[40%] xl:max-w-[35%] 2xl:max-w-[25%] rounded-xl mx-auto flex flex-col items-center p-6 justify-center sm:justify-evenly gap-4 2xs:gap-2 overflow-hidden bg-neutral-800">
+      
+      <!-- image -->
+      <img class="h-[90px] w-[90px] lg:h-[100px] lg:w-[100px] rounded-full my-2" src="avatar-jessica.jpeg" alt="Profile photo of Jessica Randall">
+
+      <!-- col-1 -->
+      <div class="my-1">
+        <h1 class="text-xl 2xs:text-2xl font-semibold text-white tracking-wide">
+          Jessica Randall
+        </h1>
+        <h2 class="text-[hsl(75,94%,57%)] text-center text-xs font-normal 2xs:text-sm 2xs:font-semibold">
+          London, United Kingdom
+        </h2>
+      </div>
+      
+      <!-- col-2 -->
+      <div class="my-2 sm-x:my-4 md:my-6">
+        <span class="text-white/80 text-center text-xs 2xs:text-sm 2xs:font-medium xs:text-base xs:font-semibold text-balance">
+          "Front-end developer and avid reader." 
+        </span>
+      </div>
+
+      <!-- col-3 -->
+      <div class="flex flex-col gap-3.5 text-white font-semibold w-[100%] tracking-normal mt-2 xs:mt-0">
+        
+        <div class="text-sm 2xs:text-base w-[100%] p-1 2xs:p-2 text-center mx-auto bg-[hsl(0,0%,23%)] rounded-md hover:bg-yellow-400 hover:text-black cursor-pointer hover:scale-[1.01] transition-all delay-75 duration-300 ease-in-out">
+          Github
+        </div>
+
+        <div class="text-sm 2xs:text-base w-[100%] p-1 2xs:p-2 text-center mx-auto bg-[hsl(0,0%,23%)] rounded-md hover:bg-yellow-400 hover:text-black cursor-pointer hover:scale-[1.01] transition-all delay-75 duration-300 ease-in-out">
+          Frontend Mentor
+        </div>
+
+        <div class="text-sm 2xs:text-base w-[100%] p-1 2xs:p-2 text-center mx-auto bg-[hsl(0,0%,23%)] rounded-md hover:bg-yellow-400 hover:text-black cursor-pointer hover:scale-[1.01] transition-all delay-75 duration-300 ease-in-out">
+          Linkedin
+        </div>
+
+        <div class="text-sm 2xs:text-base w-[100%] p-1 2xs:p-2 text-center mx-auto bg-[hsl(0,0%,23%)] rounded-md hover:bg-yellow-400 hover:text-black cursor-pointer hover:scale-[1.01] transition-all delay-75 duration-300 ease-in-out">
+          Twitter
+        </div>
+
+        <div class="text-sm 2xs:text-base w-[100%] p-1 2xs:p-2 text-center mx-auto bg-[hsl(0,0%,23%)] rounded-md hover:bg-yellow-400 hover:text-black cursor-pointer hover:scale-[1.01] transition-all delay-75 duration-300 ease-in-out">
+          Instagram  
+        </div>
+
+      </div>
+
+
+  </div>
+
+</body>
+</html>
